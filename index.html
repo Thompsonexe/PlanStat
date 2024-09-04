@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Trends and Analysis</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Case Trends and Decision Analysis</h1>
+        <nav>
+            <ul>
+                <li><a href="#data">View Data</a></li>
+                <li><a href="#trends">View Trends</a></li>
+                <li><a href="#probabilities">Probabilities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="data">
+        <h2>Data Table</h2>
+        <!-- Button to show/hide the table -->
+        <button onclick="toggleTable()">Show/Hide Table</button>
+        <p>Case Dates Range: From <strong>December 10, 2021</strong> to <strong>August 2, 2024</strong></p>
+        <table id="data-table" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Case No</th>
+                    <th>Decision</th>
+                    <th>Date</th>
+                    <th>DPO</th>
+                    <th>Applied Use</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="trends">
+        <h2>Trends</h2>
+        <canvas id="trend-chart"></canvas>
+    </section>
+
+    <section id="probabilities">
+        <h2>Probabilities</h2>
+        <div id="probabilities-summary"></div>
+    </section>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
